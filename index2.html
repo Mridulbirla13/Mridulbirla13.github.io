@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    body{
+    margin:0px;
+    padding:0px;
+}
+.container{
+    margin:0px;
+    padding:0px;
+    background-image:linear-gradient(120deg,#3494E6,#EC6EAD);
+    height:100vh;
+    width:100%;
+    position:fixed;
+    
+}
+.form{
+    background-color:white;
+    margin:20px;
+    padding:0px;;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:15px;
+    width:600px;
+    height:600px;
+    font-family: 'Montserrat', sans-serif;
+    overflow:scroll;
+    
+}
+.form::-webkit-scrollbar {
+    display: none;
+  }
+.head{
+    text-align:center;
+    margin:0px;
+    padding: 40px;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    
+}
+input{
+    margin:19px;
+    padding:12.5px;
+    border-radius:10px;
+    border-color: #E5E5E5;
+    border-style:solid;
+    font-family: 'Montserrat', sans-serif;
+    width:95%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+}
+.content{
+    padding:5px 25px;
+    font-weight: 600;
+    font-size:20px;
+}
+.content1{
+    padding: 25px;
+    font-size:16px;
+    font-weight:300;
+}
+.content2{
+    padding: 25px;
+    font-size:16px;
+    text-align:left;
+}
+lable{
+    margin:10px;
+    padding:10px;
+}
+select{
+    margin:19px;
+    padding:12.5px;
+    border-radius:10px;
+    border-color: #E5E5E5;
+    border-style: solid;
+    font-family: 'Montserrat', sans-serif;
+    width:95%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+}
+button{
+    border: none;
+    background-image:linear-gradient(120deg,#5E8BD9,#9E7EC5);
+    color:white;
+    margin:19px;    
+    padding: 15px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;   
+}
+a{
+    text-decoration:none;
+    color:#8882CC;
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+.container{
+    margin:0px;
+    padding:0px;
+    background-image:linear-gradient(120deg,#3494E6,#EC6EAD);
+    height:100vh;
+    width:100%;
+    position:fixed;
+    
+}
+.form{
+    background-color:white;
+    margin:20px;
+    padding:0px;;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:15px;
+    width:600px;
+    height:600px;
+    font-family: 'Montserrat', sans-serif;
+    overflow:scroll;
+    
+}
+.form::-webkit-scrollbar {
+    display: none;
+  }
+.head{
+    text-align:center;
+    margin:0px;
+    padding: 40px;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    
+}
+input{
+    margin:19px;
+    padding:12.5px;
+    border-radius:10px;
+    border-color: #E5E5E5;
+    border-style:solid;
+    font-family: 'Montserrat', sans-serif;
+    width:95%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+}
+.content{
+    padding:5px 25px;
+    font-weight: 600;
+    font-size:20px;
+}
+.content1{
+    padding: 25px;
+    font-size:16px;
+    font-weight:300;
+}
+.content2{
+    padding: 25px;
+    font-size:16px;
+    text-align:left;
+}
+lable{
+    margin:10px;
+    padding:10px;
+}
+select{
+    margin:19px;
+    padding:12.5px;
+    border-radius:10px;
+    border-color: #E5E5E5;
+    border-style: solid;
+    font-family: 'Montserrat', sans-serif;
+    width:95%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+}
+button{
+    border: none;
+    background-image:linear-gradient(120deg,#5E8BD9,#9E7EC5);
+    color:white;
+    margin:19px;    
+    padding: 15px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;   
+}
+a{
+    text-decoration:none;
+    color:#8882CC;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="head">
+                <h1>Login</h1>
+            </div>
+            <div class="content">
+                <lable for="email">Email</lable><br>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="content">
+                <lable for="Password">Password</lable><br>
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="content"> 
+                <center>
+                <button class="btn">Login</button>
+                </center>
+            </div>
+            <div class="content1">
+                <center>
+                Don't have an account? <a href="index.html">Signup now</a>.
+                </center>
+            </div>
+            
+            <br>
+        </div>
+    </div>
+</body>
+</html>
